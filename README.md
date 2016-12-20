@@ -8,10 +8,9 @@ This behavior is avoided by embedding the link (which effectively bypasses the a
 <script> 
  function autoRefresh()
 {
-	window.location = window.location.reload();
+	window.location = window.location.href();
 }
- 
- setInterval('autoRefresh()', 32000); // this will reload page after every 5 secounds; Method I
+ setInterval('autoRefresh()', 32000); // this will reload page after every 32 seconds (32000 milliseconds) 
 </script>
 
 <!-- Ocean Beach cam -->

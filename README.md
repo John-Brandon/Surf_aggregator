@@ -4,7 +4,7 @@ Code (and HTML) to aggregate surfing resources (webcams, tide tables, etc.). The
 
 This behavior is avoided by embedding the link (which effectively bypasses the advertisments). Further, the HTML contains a short Java-script, which reloads the page every 30 seconds. This results in unlimited (free) live streaming with a brief reload twice a minute. 
 
-'''html
+```html
 <script> 
  function autoRefresh()
 {
@@ -16,4 +16,4 @@ This behavior is avoided by embedding the link (which effectively bypasses the a
 
 <!-- Ocean Beach cam -->
 <iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4127" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
-'''
+```

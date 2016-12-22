@@ -2,12 +2,11 @@
 <html>
 
 <script> 
- function autoRefresh()
-{
-	window.location = window.location.href;
-}
+		function autoRefresh(){
+			window.location = window.location.href;
+		}
  
- setInterval('autoRefresh()', 30000); // this will reload page every 30 seconds
+		setInterval('autoRefresh()', 30000); // this will reload page every 30 seconds
 </script>
 
 <!-- Ocean Beach cam -->
@@ -15,7 +14,7 @@
 <!-- <a href="http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/" target="_blank" title="Ocean Beach, SF Surf Report and HD Surf Cam">Ocean Beach, SF</a> Live HD Surf Cam. Check out more Surf Cams at <a href="http://www.surfline.com" target="_blank" title="Surfline.com - Global Surf Reports, Surf Forecasts, Live Surf Cams and Coastal Weather">Surfline.com</a> -->
 
 <!-- South Ocean Beach cam -->
-<!-- <iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4128" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"><a href="http://www.surfline.com/surf-report/south-ocean-beach-northern-california_4128/" target="_blank" title="South Ocean Beach Surf Report and HD Surf Cam">South Ocean Beach</a> Live HD Surf Cam. Check out more Surf Cams at <a href="http://www.surfline.com" target="_blank" title="Surfline.com - Global Surf Reports, Surf Forecasts, Live Surf Cams and Coastal Weather">Surfline.com</a></div> -->
+<iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4128" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
 
 <!-- Linda Mar cam -->
 <!-- <iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=5013" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"><a href="http://www.surfline.com/surf-report/pacifica-lindamar-northern-california_5013/" target="_blank" title="Pacifica/Lindamar Surf Report and HD Surf Cam">Pacifica/Lindamar</a> Live HD Surf Cam. Check out more Surf Cams at <a href="http://www.surfline.com" target="_blank" title="Surfline.com - Global Surf Reports, Surf Forecasts, Live Surf Cams and Coastal Weather">Surfline.com</a></div> -->
@@ -26,4 +25,78 @@
 <!-- Pleasure Point cam -->
 <!-- <iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4190" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"><a href="http://www.surfline.com/surf-report/pleasure-point-central-california_4190/" target="_blank" title="Pleasure Point Surf Report and HD Surf Cam">Pleasure Point</a> Live HD Surf Cam. Check out more Surf Cams at <a href="http://www.surfline.com" target="_blank" title="Surfline.com - Global Surf Reports, Surf Forecasts, Live Surf Cams and Coastal Weather">Surfline.com</a></div> -->
 
+
+<!-- http://www.onitsurf.com/surf-cameras/brandon-bay-surf-cam.html -->
+<div class="not-first-item wide right">
+	<div style="width:481px;" class="graphic">
+		<div class="figure-content HTMLElement">
+			
+			<SCRIPT LANGUAGE="JavaScript">
+					// Set the BaseURL to the URL of your camera
+					var BaseURL = "http://88.87.182.6/";
+			
+					// DisplayWidth & DisplayHeight specifies the displayed width & height of the image.
+					// You may change these numbers, the effect will be a stretched or a shrunk image
+					var DisplayWidth = "480";
+					var DisplayHeight = "360";
+			
+					// This is the path to the image generating file inside the camera itself
+					var File = "axis-cgi/mjpg/video.cgi?resolution=480x360";
+					// No changes required below this point
+					var output = "";
+					if ((navigator.appName == "Microsoft Internet Explorer") &&
+						 (navigator.platform != "MacPPC") && (navigator.platform != "Mac68k"))
+					{
+						// If Internet Explorer under Windows then use ActiveX 
+						output  = '<OBJECT ID="Player" width='
+						output += DisplayWidth;
+						output += ' height=';
+						output += DisplayHeight;
+						output += ' CLASSID="CLSID:DE625294-70E6-45ED-B895-CFFA13AEB044" ';
+						output += 'CODEBASE="';
+						output += BaseURL;
+						output += 'activex/AMC.cab#version=5,6,2,7">';
+						output += '<PARAM NAME="MediaURL" VALUE="';
+						output += BaseURL;
+						output += File + '">';
+						output += '<param name="MediaType" value="mjpeg">';
+						output += '<param name="ShowStatusBar" value="0">';
+						output += '<param name="ShowToolbar" value="0">';
+						output += '<param name="AutoStart" value="1">';
+						output += '<param name="StretchToFit" value="1">';
+						output += '<BR><B>Axis Media Control</B><BR>';
+						output += 'The AXIS Media Control, which enables you ';
+						output += 'to view live image streams in Microsoft Internet';
+						output += ' Explorer, could not be registered on your computer.';
+						output += '<BR></OBJECT>';
+					} else {
+						// If not IE for Windows use the browser itself to display
+						theDate = new Date();
+						output  = '<IMG SRC="';
+						output += BaseURL;
+						output += File;
+						output += '&dummy=' + theDate.getTime().toString(10);
+						output += '" HEIGHT="';
+						output += DisplayHeight;
+						output += '" WIDTH="';
+						output += DisplayWidth;
+						output += '" ALT="Camera Image">';
+					}
+					document.write(output);
+					document.Player.ToolbarConfiguration = "play,+snapshot,+fullscreen"
+			
+					// Remove the // below to use the code for Motion Detection. 
+						// document.Player.UIMode = "MDConfig";
+						// document.Player.MotionConfigURL = "/axis-cgi/operator/param.cgi?ImageSource=0"
+						// document.Player.MotionDataURL = "/axis-cgi/motion/motiondata.cgi";
+			
+			</SCRIPT>
+		</div>
+	</div>
+</div>
+
+<!-- Add tide table -->
+<br />
+ <left><iframe height="3000" width="650" margin="0" frameborder="0" scrolling="no" src="http://www.ob-kc.com/images/tideprediction.html" title="tide prediction">your browser does not support IFRAMEs</iframe></left>
+ 
 </html>

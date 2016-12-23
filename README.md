@@ -1,8 +1,8 @@
 # Surf_aggregator
 
-HTML and JavaScript to aggregate surfing resources (webcams, tide tables, etc.). Currently a simple webpage with an embedded link to a surfcam(s). Normally, without a paid subscription to certain streaming services, a 15 second advertisement might play before every 30 seconds of live camera stream. 
+HTML and JavaScript to aggregate surfing resources (webcams, tide tables, etc.). Currently a simple webpage with an embedded link to a surfcam(s). 
 
-This behavior may be avoided by embedding the camera URL into an iframe (which effectively bypasses the advertisments). Further, this HTML contains a short Java-script, which reloads an iframe every 30 seconds. This results in unlimited (free) live streaming with a brief reload twice a minute. 
+Normally, without a paid subscription to certain streaming services, a 15 second advertisement might play before every 30 seconds of live camera stream. This behavior may be avoided by embedding the camera URL into an iframe (effectively delinking from advertisment cycle). Further, this HTML file contains a short JavaScript function, which is used to reload an iframe every 30 seconds. This results in unlimited (free) live streaming with a brief reload twice a minute. 
 
 ```html
 <head>

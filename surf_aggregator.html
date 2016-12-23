@@ -1,26 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
+<!-- 
 <script> 
+		// this will reload ENTIRE page every 30 seconds
 		function autoRefresh(){
 			window.location = window.location.href;
 		}
  
-		setInterval('autoRefresh()', 30000); // this will reload page every 30 seconds
+		setInterval('autoRefresh()', 30000); 
 </script>
+ -->
+
+<head>
+<script type="text/javascript">
+		function refreshiframe() {
+			var oElem = document.getElementById("OBSF");
+			oElem.src = oElem.src;
+		}
+</script>
+</head>
+
+<body onload="setInterval(refreshiframe, 31000);">
 
 <!-- Ocean Beach cam -->
 <h1>Ocean Beach, SF</h1>
-<iframe width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4127" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
+<iframe  id="OBSF" name="MiddleOB" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4127" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
 <!-- <a href="http://www.surfline.com/surf-report/ocean-beach-sf-northern-california_4127/" target="_blank" title="Ocean Beach, SF Surf Report and HD Surf Cam">Ocean Beach, SF</a> Live HD Surf Cam. Check out more Surf Cams at <a href="http://www.surfline.com" target="_blank" title="Surfline.com - Global Surf Reports, Surf Forecasts, Live Surf Cams and Coastal Weather">Surfline.com</a> -->
-
+	
 <!-- Strandhill Beach, Ireland -->
 <h1>Strandhill Beach, Ireland</h1>
-<p>
-	<iframe allowfullscreen="" frameborder="0" height="529px" src="http://ipcamlive.com/player/player.php?alias=strandhillsurfsch" width="940px"></iframe></p>
-<p>
+<iframe allowfullscreen="" frameborder="0" height="529px" src="http://ipcamlive.com/player/player.php?alias=strandhillsurfsch" width="940px"></iframe>
 
-	
 <!-- Lahinch Beach, Ireland -->
 <!-- 
 <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
@@ -119,5 +130,6 @@
 <!-- Add tide table -->
 <br />
  <left><iframe height="3000" width="650" margin="0" frameborder="0" scrolling="no" src="http://www.ob-kc.com/images/tideprediction.html" title="tide prediction">your browser does not support IFRAMEs</iframe></left>
- 
+
+</body> 
 </html>

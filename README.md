@@ -14,7 +14,7 @@ Normally, without a paid subscription to certain streaming services, a 15 second
 	</script>
 </head>
 
-<body onload="setInterval(refreshiframe, 31000);">  <!-- Units = microseconds -->
+<body onload="setInterval(refreshiframe, 31000);">  <!-- Units = ms -->
 
 	<!-- Ocean Beach cam -->
 	<h1>Ocean Beach, SF</h1>

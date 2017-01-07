@@ -14,12 +14,12 @@ Normally, without a paid subscription to certain streaming services, a 15 second
 	</script>
 </head>
 
-<body onload="setInterval(refreshiframe, 31000);">
+<body onload="setInterval(refreshiframe, 31000);">  <!-- Units = microseconds -->
 
 	<!-- Ocean Beach cam -->
 	<h1>Ocean Beach, SF</h1>
 	<iframe  id="OBSF" name="MiddleOB" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4127" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
 
-	// additional cams, tides, etc.
+	<!-- insert additional cams, tides, etc. below -->
 </body>
 ```

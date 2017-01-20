@@ -16,13 +16,13 @@ for a long time using an AdBlock browser extension. There was about 10s of downt
 removed) and the stream would automatically refresh after the pause. Good enough. Until that is, Surfline updated
 something and unceremoniously outflanked the AdBlock maneuver. 
 
-This forced my retreat. Clearly, an unacceptable situation. New plans were drawn up, only to fail in the field.
-Then a chink in the armor was found. I can't say for sure if Surfline inserted some JavaScript to kill AdBlocking in the
+This forced my retreat. Clearly, an unacceptable situation. New plans were drawn up, only to fail in the field. 
+Then a chink in the armor was found. Before I explain that, I must digress: I can't say for sure if Surfline inserted some JavaScript to kill AdBlocking in the
 name of profit. I
-also don't know if, or how much, Surfline might be trying to profit from including a link directly below each video
+also don't know if, or how much, Surfline might be trying to profit through increasing exposure by, and this is key -- including a link directly below each video
 player that can be used 
 to embed individual cam
-streams on other websites. Regardless, my heels were dug into the sand. Every push by the oppenent is an invitation to pull in the sumo ring. I would
+streams on other websites. There it was. Every greedy push by the oppenent is an invitation to a counter-pull in the sumo ring. I would
 take Surfline's generosity and embed the link they provided in my own webpage.
 
 Et Voila, embedding the camera URL into an iframe decouples the stream from the advertisment cycle. All that was left was to add

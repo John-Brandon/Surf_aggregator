@@ -22,7 +22,7 @@ name of profit. I
 also don't know if, or how much, Surfline might be trying to profit through increasing exposure by, and this is key -- including a link directly below each video
 player that can be used 
 to embed individual cam
-streams on other websites. There it was. Every greedy push by the oppenent is an invitation to a counter-pull in the sumo ring. I would
+streams on other websites. But there it was. Every greedy push by the oppenent is an invitation to a counter-pull in the sumo ring. I would
 take Surfline's generosity and embed the link they provided in my own webpage.
 
 Et Voila, embedding the camera URL into an iframe decouples the stream from the advertisment cycle. All that was left was to add
@@ -50,5 +50,5 @@ results in unlimited (free) live streaming with only a momentary pause to reload
 ```
 
 The `Surf\_aggregator.html` file can be edited easily to include any combination of cameras for which links are
-publically available. Opening the file in a browser will connect to the streams. For the world to see.
+publically available. Opening the file in a browser will connect to the streams. 
 

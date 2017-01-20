@@ -14,29 +14,39 @@
 
 	<head>
 		<script type="text/javascript">
+		// NOTE: This function does not seem to work if the list of oElem is not
+		//   identical to the list of iframes loaded in the body. 
 				function refreshiframe() {
-// 					var oElem_OBSF = document.getElementById("OBSF");
-// 					var oElem_LM = document.getElementById("LM");
-					var oElem_SL = document.getElementById("SL");
+ 					var oElem_OBSF = document.getElementById("OBSF");
+ 					var oElem_SOBSF = document.getElementById("SOBSF"); 					
+  					var oElem_LM = document.getElementById("LM");
+// 					var oElem_SL = document.getElementById("SL");
 // 					var oElem_PP = document.getElementById("PP");
 // 					var oElem_CC = document.getElementById("CC");					
 							
-// 					oElem_OBSF.src = oElem_OBSF.src;													
-// 					oElem_LM.src = oElem_LM.src;
-					oElem_SL.src = oElem_SL.src;
+ 					oElem_OBSF.src = oElem_OBSF.src;													
+ 					oElem_SOBSF.src = oElem_SOBSF.src;													 					
+  					oElem_LM.src = oElem_LM.src;
+// 					oElem_SL.src = oElem_SL.src;
 // 					oElem_PP.src = oElem_PP.src;															
-// 					oElem_CC.src = oElem_CC.src;					
-					
+// 					oElem_CC.src = oElem_CC.src;										
 				}
 		</script>
 	</head>
 
-	<body onload="setInterval(refreshiframe, 31000);">
+	<body onload="setInterval(refreshiframe, 30000);">
 
 		<!-- Steamer Lane fixed cam -->
+<!-- 
 		<h1>Steamer Lane, CA</h1>		
+		<iframe id="SL" name="SteamerLane" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>				
+ -->
+
 <!-- 		560 x 315 -->
-		<iframe id="SL" name="SteamerLane" width="560" height="315" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>				
+<!-- 		<iframe id="SL" name="SteamerLane" width="560" height="315" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>				 -->
+<!-- 		<iframe id="SL" name="SteamerLane" width=100% height=100% src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>				 -->
+<!-- <iframe src="mypage.html" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"> -->
+		
 <!-- 		640 x 360 -->
 <!-- 		<iframe id="SL" name="SteamerLane" width="640" height="360" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>		 -->
 <!-- 		<iframe id="SL" name="SteamerLane" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=132587" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div> -->
@@ -54,20 +64,16 @@
  -->
 
 		<!-- Ocean Beach cam -->
-<!-- 
 		<h1>Ocean Beach, SF</h1>
 		<iframe  id="OBSF" name="MiddleOB" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4127" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
- -->
 
 		<!-- South Ocean Beach cam -->
-<!-- 		<h1>South Ocean Beach, SF</h1>				 -->
-<!-- 		<iframe id="SOBSF" name="SouthOB" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4128" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div> -->
+		<h1>South Ocean Beach, SF</h1>						
+		<iframe id="SOBSF" name="SouthOB" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=4128" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
 
-		<!-- Linda Mar cam -->
-<!-- 
+		<!-- Linda Mar cam --> 
 		<h1>Linda Mar, CA</h1>
 		<iframe id="LM" name="LindaMar" width="853" height="480" src="http://e.cdn-surfline.com/syndication/embed/v1/player.html?id=5013" frameborder="0" scrolling="no" allowfullscreen></iframe><div style="margin: 10px 0px;"></div>
- -->
 			
 		<!-- Bob Hall Pier, Texas -->
 <!-- 

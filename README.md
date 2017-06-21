@@ -5,13 +5,13 @@ HTML and JavaScript to aggregate surfing resources (webcams, tide tables, etc.).
 ## Motivation
 
 I've been surfing for 20 yrs. Not as long as some of my friends, but long enough to have seen some changes. I speak of
-web cams pointed at the waves, streaming for the world to see. I understand that the persuit of such an enterprise,
+web cams pointed at the waves, streaming for the world to see. I understand that the pursuit of such an enterprise,
 however ultimately selfish, is well within other peoples' legal right. Heck some might say these things are our divine duty to
 pursue. All I know is I couldn't put that genie back in the bottle if I wanted. This leads us here, and to something of a recourse. To an arms race
 between a middle-aged father of two and Surfline.com.
 
 Normally, without a paid subscription, a 15 second advertisement plays before every 30s of live camera stream. After
-30s, the 15s advertisement (often the same expensive BMX beach sock one) repeats. This loop was easy to bypass
+30s, the 15s advertisement repeats (often the same ad for overpriced BMX beach socks). This loop was easy to bypass
 for a long time using an AdBlock browser extension. There was about 10s of downtime between 30s live streams (with the ads
 removed) and the stream would automatically refresh after the pause. Good enough. Until that is, Surfline updated
 something and unceremoniously outflanked the AdBlock maneuver. 
@@ -19,7 +19,7 @@ something and unceremoniously outflanked the AdBlock maneuver.
 This forced my retreat. Clearly, an unacceptable situation. New plans were drawn up, only to fail in the field. 
 Then a chink in the armor was found. Before I explain that, I must digress: I can't say for sure if Surfline inserted some JavaScript to kill AdBlocking in the
 name of profit. I
-also don't know if, or how much, Surfline might be trying to profit through increasing exposure by, and this is key -- including a link directly below each video
+also don't know if, or how much, Surfline might be trying to profit through increasing the exposure of their cam streams, by, and this is key -- including a link directly below each video
 player that can be used 
 to embed individual cam
 streams on other websites. But there it was. Every greedy push by the oppenent is an invitation to a counter-pull in the sumo ring. I would
@@ -49,6 +49,6 @@ results in unlimited (free) live streaming with only a momentary pause to reload
 </body>
 ```
 
-The `Surf\_aggregator.html` file can be edited easily to include any combination of cameras for which links are
+The `Surf_aggregator.html` file can be edited easily to include any combination of cameras for which links are
 publically available. Opening the file in a browser will connect to the streams. 
 
